@@ -1,0 +1,204 @@
+$background-color: #ffffff;
+$fntSizeMediumFontBreakpoint: 36px;
+$fntSizeBoldFontBreakpoint: 36px;
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url('../fonts/opensans/opensans-regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-weight: 700;
+  src: url('../fonts/opensans/opensans-bold.ttf');
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url('../fonts/lato/lato-bold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  font-weight: 700;
+  src: url('../fonts/montserrat/montserrat-bold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat Medium';
+  font-weight: 700;
+  src: url('../fonts/montserrat/montserrat-medium.ttf');
+}
+
+@mixin contactTextMediumFont {
+	font-family: 'OpenSans', 'Arial', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+	color:  #6a6a6a;
+	// @include media-breakpoint-down(xs) {
+	// 	font-size: 32px;
+	// 	line-height: 45px;
+	// }
+}
+@mixin contactTitleBoldFont {
+	font-family: 'Open Sans Bold', 'Arial', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 22px;
+	text-align: left;
+	color:  #6a6a6a;
+	// @include media-breakpoint-down(xs) {
+	// 	font-size: 32px;
+	// 	line-height: 45px;
+	// }
+}
+@mixin titleBoldFont($_color, $_fntSize, $_txtAlign) {
+	font-family: 'Montserrat Bold', 'Arial', sans-serif;
+	text-transform: capitalize;
+	font-weight: 700;
+	color: $_color;
+	font-size: $_fntSize;
+	text-align: $_txtAlign;
+	// @include media-breakpoint-down(xs) {
+	// 	font-size: 60px;
+	// 	line-height: 80px;
+	// }
+}
+@mixin titleMediumFont($_color, $_fntSize, $_txtAlign) {
+	font-family: 'Montserrat Medium', 'Arial', sans-serif;
+	text-transform: capitalize;
+	font-weight: 500;
+	color: $_color;
+	font-size: $_fntSize;
+	text-align: $_txtAlign;
+	// @include media-breakpoint-down(xs) {
+	// 	font-size: 60px;
+	// 	line-height: 83px;
+	// }
+}
+@mixin text {
+	font-family: 'OpenSans', 'Arial', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	color:  #6a6a6a;
+	// @include media-breakpoint-down(xs) {
+	// 	font-size: 32px;
+	// 	line-height: 45px;
+	// }
+}
+@mixin titleFooter {
+	font-family: 'Open Sans Bold', 'Arial', sans-serif;
+	color:  #ffffff;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+	text-transform: capitalize;
+	// @include media-breakpoint-down(xs) {
+	// 	font-size: 44px;
+	// 	line-height: 36px;
+	// }
+}
+@mixin textNav {
+	font-family: 'OpenSans', 'Arial', sans-serif;
+	color:  #262626;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+	text-decoration: none;
+	// @include media-breakpoint-down(xs) {
+	// 	font-size: 40px;
+	// 	line-height: 50px;
+	// }
+}
+@mixin button {
+	font-family: 'Lato', 'Arial', sans-serif;
+	color:  #ffffff;
+	font-size: 18.25px;
+	font-weight: 700;
+    display: flex;
+    width: 166px;
+    height: 49px;
+    padding: 7px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    justify-content: center;
+    transition-duration: .5s;
+    line-height: 38px;
+    background:  #1a9bdc;
+    box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2);
+    box-sizing: border-box;
+ //    @include media-breakpoint-down(xs) {
+ //    	width: 320px;
+ //    	height: 90px;
+ //    	border-radius: 50px;
+	// 	font-size: 36px;
+	// 	line-height: 70px;
+	// }
+}
+@mixin longButton {
+	font-family: 'Montserrat Medium', 'Arial', sans-serif;
+	margin: 0 auto;
+	color:  #ffffff;
+	font-size: 20px;
+	font-weight: 500;
+    display: flex;
+    width: 422px;
+	height: 54px;
+    padding: 7px;
+    border-radius: 25px;
+    transition-duration: .5s;
+    line-height: 38px;
+    background:  #0087be;
+    box-sizing: border-box;
+ //    @include media-breakpoint-down(xs) {
+	// 	width: auto;
+	// 	height: 100px;
+	// 	border-radius: 50px;
+	// }
+}
+@mixin buttonHover {
+	opacity: 0.8;
+	text-decoration: none;
+	color: #ffffff;
+	transform: scale(1.1, 1.1);
+}
+@mixin longButtonHover {
+	text-decoration: none;
+	transform: scale(1.1, 1.1);
+	cursor: pointer;
+}
+@mixin socialIcon($_mrgnLeft, $_color, $_fntSize, $_fntWeight, $_txtAlign) {
+	margin-left: $_mrgnLeft;
+	color:  $_color;
+	font-size: $_fntSize;
+	font-weight: $_fntWeight;
+	text-align: $_txtAlign;
+	transition-duration: .5s;
+	line-height: 18px;
+}
+@mixin socialIconHover {
+	opacity: 0.6;
+	text-decoration: none;
+	transform: scale(1.4, 1.4);
+}
+@mixin imageDoctor {
+	width: 279px;
+	height: 279px;
+	margin: 0 auto;
+}
+@mixin footerTopItemFlex {
+	display: flex;
+	flex-flow: row nowrap;
+}
+@mixin gradient {
+	background: rgba(149,222,195,1);
+	background: -moz-linear-gradient(left, rgba(149,222,195,1) 0%, rgba(118,207,167,1) 48%, rgba(113,209,164,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(149,222,195,1)), color-stop(48%, rgba(118,207,167,1)), color-stop(100%, rgba(113,209,164,1)));
+	background: -webkit-linear-gradient(left, rgba(149,222,195,1) 0%, rgba(118,207,167,1) 48%, rgba(113,209,164,1) 100%);
+	background: -o-linear-gradient(left, rgba(149,222,195,1) 0%, rgba(118,207,167,1) 48%, rgba(113,209,164,1) 100%);
+	background: -ms-linear-gradient(left, rgba(149,222,195,1) 0%, rgba(118,207,167,1) 48%, rgba(113,209,164,1) 100%);
+	background: linear-gradient(to right, rgba(149,222,195,1) 0%, rgba(118,207,167,1) 48%, rgba(113,209,164,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95dec3', endColorstr='#71d1a4', GradientType=1 );
+}
