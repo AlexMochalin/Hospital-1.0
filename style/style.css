@@ -24,30 +24,23 @@ html, body {
 
 body {
   margin: 0;
-  padding: 20px;
   background-color: #ffffff;
   box-sizing: border-box; }
 
 .b-contacts {
   overflow: hidden;
   padding: 33px 90px; }
-  @media all and (max-width: 440px) {
+  @media all and (max-width: 479px) {
     .b-contacts {
-      padding: 0; } }
+      padding: 20px; } }
   .b-contacts__left_decor {
     float: left; }
-    @media all and (max-width: 1300px) {
-      .b-contacts__left_decor {
-        float: none; } }
   .b-contacts__right {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
     .b-contacts__right_decor {
       float: right; }
-      @media all and (max-width: 1300px) {
-        .b-contacts__right_decor {
-          float: none; } }
   .b-contacts__item {
     width: 290px;
     height: 51px;
@@ -123,6 +116,291 @@ body {
   background-image: url("../img/Logo.png"); }
   .b-logo_decor {
     margin: 5px 10px 5px 0; }
+
+.b-line {
+  width: 89%;
+  margin: 0 auto;
+  border: 1px solid rgba(194, 194, 194, 0.31); }
+
+.b-navSocialWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 33px 90px; }
+  @media all and (max-width: 767px) {
+    .b-navSocialWrap {
+      flex-direction: column;
+      height: 280px; } }
+  @media all and (max-width: 479px) {
+    .b-navSocialWrap {
+      padding: 20px; } }
+
+.b-nav {
+  height: 15px;
+  display: flex;
+  padding: 0;
+  display: flex;
+  flex-direction: row; }
+  @media all and (max-width: 767px) {
+    .b-nav {
+      flex-direction: column; } }
+  .b-nav__link {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    color: #262626;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    padding-left: 20px; }
+    @media all and (max-width: 767px) {
+      .b-nav__link {
+        padding: 0;
+        line-height: 40px; } }
+  .b-nav__link:hover {
+    color: #6c6c6c;
+    text-decoration: none; }
+
+.b-Social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .b-Social__socialIcon {
+    margin-left: 20px;
+    color: #191919;
+    font-size: 23.34px;
+    font-weight: 400;
+    text-align: center;
+    transition-duration: .5s;
+    line-height: 18px; }
+    .b-Social__socialIcon:hover {
+      opacity: 0.6;
+      text-decoration: none;
+      transform: scale(1.4, 1.4); }
+
+.b-weHaveBest {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 640px;
+  padding-left: 20px;
+  position: relative;
+  background-image: url("../img/Layer_10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  animation: weHaveBestAnimation 20s linear infinite 0s; }
+  .b-weHaveBest__info {
+    max-width: 542px; }
+  .b-weHaveBest__title {
+    font-family: 'Montserrat Medium', 'Arial', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #474747;
+    font-size: 48px;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 37px; }
+  .b-weHaveBest__text {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #6a6a6a;
+    color: #3f3f3f;
+    font-size: 17px; }
+    @media all and (max-width: 479px) {
+      .b-weHaveBest__text {
+        display: none; } }
+  .b-weHaveBest__button_decor {
+    font-family: 'Lato', 'Arial', sans-serif;
+    color: #ffffff;
+    font-size: 18.25px;
+    font-weight: 700;
+    display: flex;
+    width: 166px;
+    height: 49px;
+    padding: 7px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    justify-content: center;
+    transition-duration: .5s;
+    line-height: 38px;
+    background: #1a9bdc;
+    box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2);
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0 auto; }
+  .b-weHaveBest__button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: #ffffff;
+    transform: scale(1.1, 1.1); }
+
+.b-ourPlusesWrap {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(451px, auto); }
+  @media all and (max-width: 1199px) {
+    .b-ourPlusesWrap {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media all and (max-width: 767px) {
+    .b-ourPlusesWrap {
+      grid-template-columns: 1fr; } }
+  .b-ourPlusesWrap__item {
+    padding: 75px 60px 57px 60px; }
+
+.b-bestTreatment {
+  background: #43b1d2; }
+  .b-bestTreatment__img {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/Ellipse_1_copy_5.png");
+    position: relative; }
+    .b-bestTreatment__img_decor {
+      margin: 0 auto; }
+  .b-bestTreatment__insideImg {
+    width: 45px;
+    height: 50px;
+    background-image: url("../img/VectorSmartObject_8.png"); }
+    .b-bestTreatment__insideImg_decor {
+      position: absolute;
+      top: 13px;
+      left: 20px; }
+  .b-bestTreatment__title {
+    font-family: 'Montserrat Bold', 'Arial', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center; }
+    .b-bestTreatment__title_decor {
+      margin-top: 10px; }
+  .b-bestTreatment__text {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #6a6a6a;
+    color: #ffffff; }
+    .b-bestTreatment__text_decor {
+      margin-top: 10px; }
+
+.b-emergencyHelp {
+  background: #3fb6c6; }
+  .b-emergencyHelp__img {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/Ellipse_1_copy_5.png");
+    position: relative; }
+    .b-emergencyHelp__img_decor {
+      margin: 0 auto; }
+  .b-emergencyHelp__insideImg {
+    width: 51px;
+    height: 46px;
+    background: url("../img/VectorSmartObject.png"); }
+    .b-emergencyHelp__insideImg_decor {
+      position: absolute;
+      top: 17px;
+      left: 12px; }
+  .b-emergencyHelp__title {
+    font-family: 'Montserrat Bold', 'Arial', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center; }
+    .b-emergencyHelp__title_decor {
+      margin-top: 10px; }
+  .b-emergencyHelp__text {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #6a6a6a;
+    color: #ffffff; }
+    .b-emergencyHelp__text_decor {
+      margin-top: 10px; }
+
+.b-medicalStaff {
+  background: #3cbbbb; }
+  .b-medicalStaff__img {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/Ellipse_1_copy_5.png");
+    position: relative; }
+    .b-medicalStaff__img_decor {
+      margin: 0 auto; }
+  .b-medicalStaff__insideImg {
+    width: 31px;
+    height: 54px;
+    background: url("../img/VectorSmartObject_5.png"); }
+    .b-medicalStaff__insideImg_decor {
+      position: absolute;
+      top: 12px;
+      left: 22px; }
+  .b-medicalStaff__title {
+    font-family: 'Montserrat Bold', 'Arial', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center; }
+    .b-medicalStaff__title_decor {
+      margin-top: 10px; }
+  .b-medicalStaff__text {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #6a6a6a;
+    color: #ffffff; }
+    .b-medicalStaff__text_decor {
+      margin-top: 10px; }
+
+.b-qualifiedDoctors {
+  background: #37c3a8; }
+  .b-qualifiedDoctors__img {
+    width: 75px;
+    height: 75px;
+    background-image: url("../img/Ellipse_1_copy_5.png");
+    position: relative; }
+    .b-qualifiedDoctors__img_decor {
+      margin: 0 auto; }
+  .b-qualifiedDoctors__insideImg {
+    width: 44px;
+    height: 42px;
+    background: url("../img/VectorSmartObject_4.png"); }
+    .b-qualifiedDoctors__insideImg_decor {
+      position: absolute;
+      top: 17px;
+      left: 18px; }
+  .b-qualifiedDoctors__title {
+    font-family: 'Montserrat Bold', 'Arial', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center; }
+    .b-qualifiedDoctors__title_decor {
+      margin-top: 10px; }
+  .b-qualifiedDoctors__text {
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #6a6a6a;
+    color: #ffffff; }
+    .b-qualifiedDoctors__text_decor {
+      margin-top: 10px; }
 
 @keyframes logoSmallAnimation {
   0% {
