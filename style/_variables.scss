@@ -32,19 +32,19 @@ $fntSizeBoldFontBreakpoint: 36px;
     @media all and (max-width: 479px) { @content; }
   }
   @else if $_media == wide-phones {
-    @media all and (min-width: 480px) and (max-width: 767px) { @content; }
+    @media all and (max-width: 767px) { @content; }
   }
   @else if $_media == tablets {
-    @media all and (min-width: 768px) and (max-width: 991px) { @content; }
+    @media all and (max-width: 991px) { @content; }
   }
   @else if $_media == small-desktops {
-    @media all and (min-width: 992px) and (max-width: 1199px) { @content; }
+    @media all and (max-width: 1199px) { @content; }
   }
   @else if $_media == lg-desktops {
-    @media all and (min-width: 1200px) and (max-width: 1440px) { @content; }
+    @media all and (max-width: 1440px) { @content; }
   }
   @else if $_media == xlg-desktops {
-    @media all and (min-width: 1441px) and (max-width: 1920px) { @content; }
+    @media all and (max-width: 1920px) { @content; }
   }
 }
 
@@ -150,6 +150,7 @@ $fntSizeBoldFontBreakpoint: 36px;
     background:  #1a9bdc;
     box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2);
     box-sizing: border-box;
+    text-decoration: none;
  //    @include media-breakpoint-down(xs) {
  //    	width: 320px;
  //    	height: 90px;
@@ -198,6 +199,7 @@ $fntSizeBoldFontBreakpoint: 36px;
 	text-align: $_txtAlign;
 	transition-duration: .5s;
 	line-height: 18px;
+	// height: 30px;
 }
 @mixin socialIconHover {
 	opacity: 0.6;
